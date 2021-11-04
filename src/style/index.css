@@ -73,3 +73,9 @@
 .icon-wode:before {
   content: "\e615";
 }
+body {
+  background-color: #f0f0f0;
+}
+.page-nav-bar {
+  background-color: #f9f9f9;
+}
