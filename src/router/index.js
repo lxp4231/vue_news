@@ -48,6 +48,26 @@ export default new VueRouter({
       name: "user-profile",
       path: "/user/profile",
       component: () => import("@/views/user-profile")
+    },
+    {
+      name: "my-collect",
+      path: "/my/collect",
+      component: () => import("@/views/my/components/my-collect.vue")
+    },
+    {
+      name: "my-history",
+      path: "/my/history",
+      component: () => import("@/views/my/components/my-history.vue")
+    },
+    {
+      name: "my-message",
+      path: "/my/message",
+      component: () => import("@/views/my/components/my-message.vue")
+    },
+    {
+      name: "my-helper",
+      path: "/my/helper",
+      component: () => import("@/views/my/components/my-helper.vue")
     }
   ]
 });

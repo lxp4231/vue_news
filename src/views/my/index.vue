@@ -20,7 +20,9 @@
                         size='mini'
                         round
                         to="/user/profile"
-                    >个人信息</van-button>
+                    >个人信息
+                        <van-icon name="arrow" />
+                    </van-button>
                 </div>
             </div>
             <div class="data-stats">
@@ -62,14 +64,20 @@
             class="grid-nav"
             clickable
         >
-            <van-grid-item class="grid-nav-item">
+            <van-grid-item
+                class="grid-nav-item"
+                @click="$router.push('/my/collect')"
+            >
                 <i
                     slot="icon"
                     class="iconfont icon-shoucang"
                 ></i>
                 <span slot="text">收藏</span>
             </van-grid-item>
-            <van-grid-item class="grid-nav-item">
+            <van-grid-item
+                class="grid-nav-item"
+                @click="$router.push('/my/history')"
+            >
                 <i
                     slot="icon"
                     class="iconfont icon-lishi"
@@ -82,11 +90,13 @@
         <van-cell
             title="消息通知"
             is-link
+            @click="$router.push('/my/message')"
         />
         <van-cell
             class="mb-9"
             title="智能助手"
             is-link
+            @click="$router.push('/my/helper')"
         />
         <van-cell
             title="设置"

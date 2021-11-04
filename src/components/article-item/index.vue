@@ -52,7 +52,6 @@ export default {
             required: true,
         },
     },
-    computed: {},
 };
 </script>
 
